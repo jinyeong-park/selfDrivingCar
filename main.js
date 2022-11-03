@@ -9,7 +9,7 @@ animate();
 
 function animate() {
     car.update();
-    // keep making canvas keep stretching
+    // resize canvas (keep making canvas keep stretching)
     canvas.height = window.innerHeight;
     // redraw a car
     car.draw(ctx);
