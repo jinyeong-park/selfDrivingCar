@@ -9,7 +9,7 @@ class Controls {
     }
 
     #addKeyboardListeners() {
-       document.onKeydown = (event) => {
+       document.onkeydown = (event) => {
         switch(event.key) {
             case "ArrowLeft":
                 this.left = true;
@@ -26,7 +26,7 @@ class Controls {
         }
         console.table(this);
        }
-       document.onKeyup = (event) => {
+       document.onkeyup = (event) => {
         switch(event.key) {
             case "ArrowLeft":
                 this.left = false;
