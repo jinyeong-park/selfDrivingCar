@@ -1,5 +1,4 @@
 const canvas = document.getElementById("myCanvas");
-canvas.height = window.innerHeight;
 canvas.width = 200;
 
 const ctx = canvas.getContext("2d");
@@ -10,6 +9,8 @@ animate();
 
 function animate() {
     car.update();
+    // keep making canvas keep stretching
+    canvas.height = window.innerHeight;
     // redraw a car
     car.draw(ctx);
     requestAnimationFrame(animate);
